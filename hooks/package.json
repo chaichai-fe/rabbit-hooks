@@ -1,0 +1,33 @@
+{
+  "name": "rabbit-hooks",
+  "main": "./dist/rabbit-hooks.umd.cjs",
+  "module": "./dist/rabbit-hooks.js",
+  "types": "./dist/index.d.ts",
+  "private": false,
+  "keywords": [
+    "Vue3",
+    "Hooks"
+  ],
+  "version": "0.0.5",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@vue/test-utils": "^2.4.6",
+    "radash": "^12.1.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "jsdom": "^24.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vite-plugin-dts": "^3.9.1",
+    "vitest": "^1.6.0",
+    "vue-tsc": "^2.0.6"
+  }
+}

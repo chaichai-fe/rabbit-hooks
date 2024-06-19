@@ -1,0 +1,17 @@
+{
+  "name": "rabbit-hooks",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "hooks:dev": "pnpm run -C hooks dev",
+    "hooks:test": "pnpm run -C hooks test",
+    "hooks:build": "pnpm run -C hooks build",
+    "docs:dev": "pnpm run -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:preview": "pnpm run -C docs dev"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.5"
+  }
+}
