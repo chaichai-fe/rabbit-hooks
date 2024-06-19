@@ -1,0 +1,1 @@
+import{_ as a,c as s,o as t,a1 as i}from"./chunks/framework._GD0VCAC.js";const u=JSON.parse('{"title":"安装","description":"","frontmatter":{},"headers":[],"relativePath":"start.md","filePath":"start.md"}'),e={name:"start.md"},l=i("",5),n=[l];function p(o,d,h,r,c,b){return t(),s("div",null,n)}const _=a(e,[["render",p]]);export{u as __pageData,_ as default};

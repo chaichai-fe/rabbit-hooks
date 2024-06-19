@@ -8,9 +8,13 @@
     "hooks:test": "pnpm run -C hooks test",
     "hooks:build": "pnpm run -C hooks build",
     "docs:dev": "pnpm run -C docs-dev dev",
-    "docs:build": "pnpm run -C docs-dev build"
+    "docs:build": "pnpm run -C docs-dev build",
+    "postdocs:build": "shx rm -rf ./docs/* && shx cp -r ./docs-dev/.vitepress/dist/* ./docs/"
   },
   "devDependencies": {
     "@types/node": "^20.14.5"
+  },
+  "dependencies": {
+    "shx": "^0.3.4"
   }
 }
