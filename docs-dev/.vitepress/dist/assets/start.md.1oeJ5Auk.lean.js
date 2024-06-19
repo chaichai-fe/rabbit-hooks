@@ -1,1 +1,0 @@
-import{_ as a,c as s,o as t,a1 as i}from"./chunks/framework.BtBsNfS7.js";const _=JSON.parse('{"title":"安装","description":"","frontmatter":{},"headers":[],"relativePath":"start.md","filePath":"start.md"}'),e={name:"start.md"},l=i("",5),n=[l];function o(p,d,h,r,c,b){return t(),s("div",null,n)}const u=a(e,[["render",o]]);export{_ as __pageData,u as default};

@@ -1,180 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Functions | rabbit-hooks</title>
-  <meta name="description" content="rabbit-hooks 文档">
-  <meta name="generator" content="VitePress v1.2.3">
-  <link rel="preload stylesheet" href="assets/style.6xnvO5uk.css" as="style">
-
-  <script type="module" src="assets/app.DS_2zRNv.js"></script>
-  <link rel="preload" href="assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="modulepreload" href="assets/chunks/framework.BtBsNfS7.js">
-  <link rel="modulepreload" href="assets/chunks/theme.BoOBgZeJ.js">
-  <link rel="modulepreload" href="assets/functions.md.CdMFcWzk.lean.js">
-  <script
-    id="check-dark-mode">(() => { const e = localStorage.getItem("vitepress-theme-appearance") || "auto", a = window.matchMedia("(prefers-color-scheme: dark)").matches; (!e || e === "auto" ? a : e === "dark") && document.documentElement.classList.add("dark") })();</script>
-  <script
-    id="check-mac-os">document.documentElement.classList.toggle("mac", /Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
-</head>
-
-<body>
-  <div id="app">
-    <div class="Layout" data-v-851553cc><!--[--><!--]--><!--[--><span tabindex="-1" data-v-1fb22f25></span><a
-        href="#VPContent" class="VPSkipLink visually-hidden" data-v-1fb22f25> Skip to content </a><!--]--><!---->
-      <header class="VPNav" data-v-851553cc data-v-76308694>
-        <div class="VPNavBar has-sidebar top" data-v-76308694 data-v-ec72a082>
-          <div class="wrapper" data-v-ec72a082>
-            <div class="container" data-v-ec72a082>
-              <div class="title" data-v-ec72a082>
-                <div class="VPNavBarTitle has-sidebar" data-v-ec72a082 data-v-3f36d118><a class="title" href="/"
-                    data-v-3f36d118><!--[--><!--]--><!----><span data-v-3f36d118>rabbit-hooks</span><!--[--><!--]--></a>
-                </div>
-              </div>
-              <div class="content" data-v-ec72a082>
-                <div class="content-body" data-v-ec72a082><!--[--><!--]-->
-                  <div class="VPNavBarSearch search" data-v-ec72a082><!----></div>
-                  <nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-ec72a082 data-v-7bd09678>
-                    <span id="main-nav-aria-label" class="visually-hidden" data-v-7bd09678>Main
-                      Navigation</span><!--[--><!--]--></nav><!---->
-                  <div class="VPNavBarAppearance appearance" data-v-ec72a082 data-v-7c6779b0><button
-                      class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme"
-                      aria-checked="false" data-v-7c6779b0 data-v-6b56e579 data-v-2c0f2140><span class="check"
-                        data-v-2c0f2140><span class="icon" data-v-2c0f2140><!--[--><span class="vpi-sun sun"
-                            data-v-6b56e579></span><span class="vpi-moon moon"
-                            data-v-6b56e579></span><!--]--></span></span></button></div>
-                  <div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-ec72a082 data-v-24c99930
-                    data-v-2cc460cf><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress"
-                      aria-label="github" target="_blank" rel="noopener" data-v-2cc460cf data-v-8a178a3a><span
-                        class="vpi-social-github" /></a><!--]--></div>
-                  <div class="VPFlyout VPNavBarExtra extra" data-v-ec72a082 data-v-1b9f05d4 data-v-ab1a54db><button
-                      type="button" class="button" aria-haspopup="true" aria-expanded="false"
-                      aria-label="extra navigation" data-v-ab1a54db><span class="vpi-more-horizontal icon"
-                        data-v-ab1a54db></span></button>
-                    <div class="menu" data-v-ab1a54db>
-                      <div class="VPMenu" data-v-ab1a54db data-v-ddb91569><!----><!--[--><!--[--><!---->
-                        <div class="group" data-v-1b9f05d4>
-                          <div class="item appearance" data-v-1b9f05d4>
-                            <p class="label" data-v-1b9f05d4>Appearance</p>
-                            <div class="appearance-action" data-v-1b9f05d4><button class="VPSwitch VPSwitchAppearance"
-                                type="button" role="switch" title="Switch to dark theme" aria-checked="false"
-                                data-v-1b9f05d4 data-v-6b56e579 data-v-2c0f2140><span class="check"
-                                  data-v-2c0f2140><span class="icon" data-v-2c0f2140><!--[--><span class="vpi-sun sun"
-                                      data-v-6b56e579></span><span class="vpi-moon moon"
-                                      data-v-6b56e579></span><!--]--></span></span></button></div>
-                          </div>
-                        </div>
-                        <div class="group" data-v-1b9f05d4>
-                          <div class="item social-links" data-v-1b9f05d4>
-                            <div class="VPSocialLinks social-links-list" data-v-1b9f05d4 data-v-2cc460cf><!--[--><a
-                                class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress"
-                                aria-label="github" target="_blank" rel="noopener" data-v-2cc460cf data-v-8a178a3a><span
-                                  class="vpi-social-github" /></a><!--]--></div>
-                          </div>
-                        </div><!--]--><!--]-->
-                      </div>
-                    </div>
-                  </div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger"
-                    aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-ec72a082
-                    data-v-6915823c><span class="container" data-v-6915823c><span class="top"
-                        data-v-6915823c></span><span class="middle" data-v-6915823c></span><span class="bottom"
-                        data-v-6915823c></span></span></button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="divider" data-v-ec72a082>
-            <div class="divider-line" data-v-ec72a082></div>
-          </div>
-        </div><!---->
-      </header>
-      <div class="VPLocalNav has-sidebar empty" data-v-851553cc data-v-666781c3>
-        <div class="container" data-v-666781c3><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav"
-            data-v-666781c3><span class="vpi-align-left menu-icon" data-v-666781c3></span><span class="menu-text"
-              data-v-666781c3>Menu</span></button>
-          <div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-666781c3 data-v-141355d9><button
-              data-v-141355d9>Return to top</button><!----></div>
-        </div>
-      </div>
-      <aside class="VPSidebar" data-v-851553cc data-v-98c6ac48>
-        <div class="curtain" data-v-98c6ac48></div>
-        <nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-98c6ac48><span
-            class="visually-hidden" id="sidebar-aria-label" data-v-98c6ac48> Sidebar Navigation
-          </span><!--[--><!--]--><!--[-->
-          <div class="group" data-v-98c6ac48>
-            <section class="VPSidebarItem level-0 has-active" data-v-98c6ac48 data-v-03902661><!---->
-              <div class="items" data-v-03902661><!--[-->
-                <div class="VPSidebarItem level-1 is-link" data-v-03902661 data-v-03902661>
-                  <div class="item" data-v-03902661>
-                    <div class="indicator" data-v-03902661></div><a class="VPLink link link" href="/start.html"
-                      data-v-03902661><!--[-->
-                      <p class="text" data-v-03902661>Started</p><!--]-->
-                    </a><!---->
-                  </div><!---->
-                </div>
-                <div class="VPSidebarItem level-1 is-link" data-v-03902661 data-v-03902661>
-                  <div class="item" data-v-03902661>
-                    <div class="indicator" data-v-03902661></div><a class="VPLink link link" href="/functions.html"
-                      data-v-03902661><!--[-->
-                      <p class="text" data-v-03902661>Functions</p><!--]-->
-                    </a><!---->
-                  </div><!---->
-                </div><!--]-->
-              </div>
-            </section>
-          </div><!--]--><!--[--><!--]-->
-        </nav>
-      </aside>
-      <div class="VPContent has-sidebar" id="VPContent" data-v-851553cc data-v-4cf395c1>
-        <div class="VPDoc has-sidebar has-aside" data-v-4cf395c1 data-v-1e4aded4><!--[--><!--]-->
-          <div class="container" data-v-1e4aded4>
-            <div class="aside" data-v-1e4aded4>
-              <div class="aside-curtain" data-v-1e4aded4></div>
-              <div class="aside-container" data-v-1e4aded4>
-                <div class="aside-content" data-v-1e4aded4>
-                  <div class="VPDocAside" data-v-1e4aded4 data-v-9af937f5><!--[--><!--]--><!--[--><!--]-->
-                    <nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-9af937f5
-                      data-v-3beb998a>
-                      <div class="content" data-v-3beb998a>
-                        <div class="outline-marker" data-v-3beb998a></div>
-                        <div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading"
-                          data-v-3beb998a>On this page</div>
-                        <ul class="VPDocOutlineItem root" data-v-3beb998a data-v-cde4e23d><!--[--><!--]--></ul>
-                      </div>
-                    </nav><!--[--><!--]-->
-                    <div class="spacer" data-v-9af937f5></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]-->
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="content" data-v-1e4aded4>
-              <div class="content-container" data-v-1e4aded4><!--[--><!--]-->
-                <main class="main" data-v-1e4aded4>
-                  <div style="position:relative;" class="vp-doc _functions" data-v-1e4aded4>
-                    <div>
-                      <h1 id="functions" tabindex="-1">Functions <a class="header-anchor" href="#functions"
-                          aria-label="Permalink to &quot;Functions&quot;">​</a></h1>
-                      <h2 id="usecounter" tabindex="-1">useCounter <a class="header-anchor" href="#usecounter"
-                          aria-label="Permalink to &quot;useCounter&quot;">​</a></h2>
-                      <ul>
-                        <li>USAGE</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code"
-                          tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useCounter } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Functions | rabbit-hooks</title>
+    <meta name="description" content="rabbit-hooks 文档">
+    <meta name="generator" content="VitePress v1.2.3">
+    <link rel="preload stylesheet" href="/rabbit-hooks/assets/style.nFI1ZGos.css" as="style">
+    
+    <script type="module" src="/rabbit-hooks/assets/app.D_u2doja.js"></script>
+    <link rel="preload" href="/rabbit-hooks/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/rabbit-hooks/assets/chunks/framework._GD0VCAC.js">
+    <link rel="modulepreload" href="/rabbit-hooks/assets/chunks/theme.Ce-mJhs3.js">
+    <link rel="modulepreload" href="/rabbit-hooks/assets/functions.md.C4pu6CwN.lean.js">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-851553cc><!--[--><!--]--><!--[--><span tabindex="-1" data-v-1fb22f25></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-1fb22f25> Skip to content </a><!--]--><!----><header class="VPNav" data-v-851553cc data-v-76308694><div class="VPNavBar has-sidebar top" data-v-76308694 data-v-ec72a082><div class="wrapper" data-v-ec72a082><div class="container" data-v-ec72a082><div class="title" data-v-ec72a082><div class="VPNavBarTitle has-sidebar" data-v-ec72a082 data-v-3f36d118><a class="title" href="/rabbit-hooks/" data-v-3f36d118><!--[--><!--]--><!----><span data-v-3f36d118>rabbit-hooks</span><!--[--><!--]--></a></div></div><div class="content" data-v-ec72a082><div class="content-body" data-v-ec72a082><!--[--><!--]--><div class="VPNavBarSearch search" data-v-ec72a082><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-ec72a082 data-v-7bd09678><span id="main-nav-aria-label" class="visually-hidden" data-v-7bd09678>Main Navigation</span><!--[--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-ec72a082 data-v-7c6779b0><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-7c6779b0 data-v-6b56e579 data-v-2c0f2140><span class="check" data-v-2c0f2140><span class="icon" data-v-2c0f2140><!--[--><span class="vpi-sun sun" data-v-6b56e579></span><span class="vpi-moon moon" data-v-6b56e579></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-ec72a082 data-v-24c99930 data-v-2cc460cf><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress" aria-label="github" target="_blank" rel="noopener" data-v-2cc460cf data-v-8a178a3a><span class="vpi-social-github" /></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-ec72a082 data-v-1b9f05d4 data-v-ab1a54db><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-ab1a54db><span class="vpi-more-horizontal icon" data-v-ab1a54db></span></button><div class="menu" data-v-ab1a54db><div class="VPMenu" data-v-ab1a54db data-v-ddb91569><!----><!--[--><!--[--><!----><div class="group" data-v-1b9f05d4><div class="item appearance" data-v-1b9f05d4><p class="label" data-v-1b9f05d4>Appearance</p><div class="appearance-action" data-v-1b9f05d4><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="Switch to dark theme" aria-checked="false" data-v-1b9f05d4 data-v-6b56e579 data-v-2c0f2140><span class="check" data-v-2c0f2140><span class="icon" data-v-2c0f2140><!--[--><span class="vpi-sun sun" data-v-6b56e579></span><span class="vpi-moon moon" data-v-6b56e579></span><!--]--></span></span></button></div></div></div><div class="group" data-v-1b9f05d4><div class="item social-links" data-v-1b9f05d4><div class="VPSocialLinks social-links-list" data-v-1b9f05d4 data-v-2cc460cf><!--[--><a class="VPSocialLink no-icon" href="https://github.com/vuejs/vitepress" aria-label="github" target="_blank" rel="noopener" data-v-2cc460cf data-v-8a178a3a><span class="vpi-social-github" /></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-ec72a082 data-v-6915823c><span class="container" data-v-6915823c><span class="top" data-v-6915823c></span><span class="middle" data-v-6915823c></span><span class="bottom" data-v-6915823c></span></span></button></div></div></div></div><div class="divider" data-v-ec72a082><div class="divider-line" data-v-ec72a082></div></div></div><!----></header><div class="VPLocalNav has-sidebar empty" data-v-851553cc data-v-666781c3><div class="container" data-v-666781c3><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-666781c3><span class="vpi-align-left menu-icon" data-v-666781c3></span><span class="menu-text" data-v-666781c3>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-666781c3 data-v-141355d9><button data-v-141355d9>Return to top</button><!----></div></div></div><aside class="VPSidebar" data-v-851553cc data-v-98c6ac48><div class="curtain" data-v-98c6ac48></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-98c6ac48><span class="visually-hidden" id="sidebar-aria-label" data-v-98c6ac48> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="group" data-v-98c6ac48><section class="VPSidebarItem level-0 has-active" data-v-98c6ac48 data-v-03902661><!----><div class="items" data-v-03902661><!--[--><div class="VPSidebarItem level-1 is-link" data-v-03902661 data-v-03902661><div class="item" data-v-03902661><div class="indicator" data-v-03902661></div><a class="VPLink link link" href="/rabbit-hooks/start.html" data-v-03902661><!--[--><p class="text" data-v-03902661>Started</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-03902661 data-v-03902661><div class="item" data-v-03902661><div class="indicator" data-v-03902661></div><a class="VPLink link link" href="/rabbit-hooks/functions.html" data-v-03902661><!--[--><p class="text" data-v-03902661>Functions</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-851553cc data-v-4cf395c1><div class="VPDoc has-sidebar has-aside" data-v-4cf395c1 data-v-1e4aded4><!--[--><!--]--><div class="container" data-v-1e4aded4><div class="aside" data-v-1e4aded4><div class="aside-curtain" data-v-1e4aded4></div><div class="aside-container" data-v-1e4aded4><div class="aside-content" data-v-1e4aded4><div class="VPDocAside" data-v-1e4aded4 data-v-9af937f5><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-9af937f5 data-v-3beb998a><div class="content" data-v-3beb998a><div class="outline-marker" data-v-3beb998a></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-3beb998a>On this page</div><ul class="VPDocOutlineItem root" data-v-3beb998a data-v-cde4e23d><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-9af937f5></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-1e4aded4><div class="content-container" data-v-1e4aded4><!--[--><!--]--><main class="main" data-v-1e4aded4><div style="position:relative;" class="vp-doc _rabbit-hooks_functions" data-v-1e4aded4><div><h1 id="functions" tabindex="-1">Functions <a class="header-anchor" href="#functions" aria-label="Permalink to &quot;Functions&quot;">​</a></h1><h2 id="usecounter" tabindex="-1">useCounter <a class="header-anchor" href="#usecounter" aria-label="Permalink to &quot;useCounter&quot;">​</a></h2><ul><li>USAGE</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useCounter } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
 <span class="line"></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">count</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, {</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">inc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">dec</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">reset</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">} } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useCounter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, {mix: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, min: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span></code></pre>
-                      </div>
-                      <ul>
-                        <li>TYPES</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code"
-                          tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">count</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, {</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">inc</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">dec</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">reset</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">} } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useCounter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, {mix: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, min: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span></code></pre></div><ul><li>TYPES</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  max</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> number</span></span>
 <span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  min</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> number</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span>
@@ -186,43 +31,16 @@
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">    reset</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  }</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">declare</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useCounter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">initialCount</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ReturnType</span></span></code></pre>
-                      </div>
-                      <h2 id="useintervalfn" tabindex="-1">useIntervalFn <a class="header-anchor" href="#useintervalfn"
-                          aria-label="Permalink to &quot;useIntervalFn&quot;">​</a></h2>
-                      <ul>
-                        <li>USAGE</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code"
-                          tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useIntervalFn } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">declare</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useCounter</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">initialCount</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ReturnType</span></span></code></pre></div><h2 id="useintervalfn" tabindex="-1">useIntervalFn <a class="header-anchor" href="#useintervalfn" aria-label="Permalink to &quot;useIntervalFn&quot;">​</a></h2><ul><li>USAGE</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useIntervalFn } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">start</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">stop</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useIntervalFn</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(() </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;do something&#39;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre>
-                      </div>
-                      <ul>
-                        <li>TYPES</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code"
-                          tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Cb</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></div><ul><li>TYPES</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Cb</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ReturnType</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">  start</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">  stop</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">declare</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useIntervalFn</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">fn</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Cb</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">time</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ReturnType</span></span></code></pre>
-                      </div>
-                      <h2 id="usewindowscroll" tabindex="-1">useWindowScroll <a class="header-anchor"
-                          href="#usewindowscroll" aria-label="Permalink to &quot;useWindowScroll&quot;">​</a></h2>
-                      <ul>
-                        <li>USAGE</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useWindowScroll } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">declare</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useIntervalFn</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">fn</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Cb</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">time</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ReturnType</span></span></code></pre></div><h2 id="usewindowscroll" tabindex="-1">useWindowScroll <a class="header-anchor" href="#usewindowscroll" aria-label="Permalink to &quot;useWindowScroll&quot;">​</a></h2><ul><li>USAGE</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useWindowScroll } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">start</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">stop</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useWindowScroll</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
@@ -232,15 +50,7 @@
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    isThrottle: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    interval: </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">1000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  }</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre>
-                      </div>
-                      <ul>
-                        <li>TYPES</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code"
-                          tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { Ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;vue&#39;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span></code></pre></div><ul><li>TYPES</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { Ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;vue&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  isThrottle</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> boolean</span></span>
@@ -249,53 +59,19 @@
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ReturnType</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  scrollY</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&lt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">&gt;</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">declare</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useWindowScroll</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ReturnType</span></span></code></pre>
-                      </div>
-                      <h2 id="useclickoutside" tabindex="-1">useClickOutSide <a class="header-anchor"
-                          href="#useclickoutside" aria-label="Permalink to &quot;useClickOutSide&quot;">​</a></h2>
-                      <ul>
-                        <li>USAGE</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useClickOutSide } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">declare</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useWindowScroll</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ReturnType</span></span></code></pre></div><h2 id="useclickoutside" tabindex="-1">useClickOutSide <a class="header-anchor" href="#useclickoutside" aria-label="Permalink to &quot;useClickOutSide&quot;">​</a></h2><ul><li>USAGE</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useClickOutSide } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> elRef</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">useClickOutside</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(elRef, () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  console.</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">log</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&#39;关闭弹框&#39;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span></code></pre>
-                      </div>
-                      <ul>
-                        <li>TYPES</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code"
-                          tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Cb</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span>
-<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">declare</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useClickOutside</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">el</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> HTMLElement</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">cb</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Cb</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span></code></pre>
-                      </div>
-                      <h2 id="useintersectionobserver" tabindex="-1">useIntersectionObserver <a class="header-anchor"
-                          href="#useintersectionobserver"
-                          aria-label="Permalink to &quot;useIntersectionObserver&quot;">​</a></h2>
-                      <ul>
-                        <li>USAGE</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useIntersectionObserver } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span></code></pre></div><ul><li>TYPES</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">type</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Cb</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span>
+<span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">declare</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> useClickOutside</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">el</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> HTMLElement</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">cb</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Cb</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span></span></code></pre></div><h2 id="useintersectionobserver" tabindex="-1">useIntersectionObserver <a class="header-anchor" href="#useintersectionobserver" aria-label="Permalink to &quot;useIntersectionObserver&quot;">​</a></h2><ul><li>USAGE</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { useIntersectionObserver } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;rabbit-hooks&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> elRef</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">null</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">useIntersectionObserver</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(elRef, (</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">isIntersecting</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">  // el into the View</span></span>
 <span class="line"><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">  // inIntersection to be true</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span></code></pre>
-                      </div>
-                      <ul>
-                        <li>TYPES</li>
-                      </ul>
-                      <div class="language-typescript vp-adaptive-theme"><button title="Copy Code"
-                          class="copy"></button><span class="lang">typescript</span>
-                        <pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { Ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;vue&#39;</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">})</span></span></code></pre></div><ul><li>TYPES</li></ul><div class="language-typescript vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">typescript</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> { Ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> &#39;vue&#39;</span></span>
 <span class="line"></span>
 <span class="line"><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">interface</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  threshold</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> number</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> number</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[]</span></span>
@@ -308,29 +84,8 @@
 <span class="line"><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;">  options</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">?:</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> Options</span></span>
 <span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
 <span class="line"><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">  stop</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">:</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=&gt;</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> void</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> |</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> null</span></span>
-<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </main>
-                <footer class="VPDocFooter" data-v-1e4aded4 data-v-e369c263><!--[--><!--]--><!---->
-                  <nav class="prev-next" aria-labelledby="doc-footer-aria-label" data-v-e369c263><span
-                      class="visually-hidden" id="doc-footer-aria-label" data-v-e369c263>Pager</span>
-                    <div class="pager" data-v-e369c263><a class="VPLink link pager-link prev" href="/start.html"
-                        data-v-e369c263><!--[--><span class="desc" data-v-e369c263>Previous page</span><span
-                          class="title" data-v-e369c263>Started</span><!--]--></a></div>
-                    <div class="pager" data-v-e369c263><!----></div>
-                  </nav>
-                </footer><!--[--><!--]-->
-              </div>
-            </div>
-          </div><!--[--><!--]-->
-        </div>
-      </div><!----><!--[--><!--]-->
-    </div>
-  </div>
-  <script>window.__VP_HASH_MAP__ = JSON.parse("{\"index.md\":\"CBbHPfy5\",\"start.md\":\"1oeJ5Auk\",\"functions.md\":\"CdMFcWzk\"}"); window.__VP_SITE_DATA__ = JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"rabbit-hooks\",\"description\":\"rabbit-hooks 文档\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"nav\":[],\"sidebar\":[{\"items\":[{\"text\":\"Started\",\"link\":\"/start\"},{\"text\":\"Functions\",\"link\":\"/functions\"}]}],\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/vuejs/vitepress\"}]},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
-
-</body>
-
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div></div></div></main><footer class="VPDocFooter" data-v-1e4aded4 data-v-e369c263><!--[--><!--]--><!----><nav class="prev-next" aria-labelledby="doc-footer-aria-label" data-v-e369c263><span class="visually-hidden" id="doc-footer-aria-label" data-v-e369c263>Pager</span><div class="pager" data-v-e369c263><a class="VPLink link pager-link prev" href="/rabbit-hooks/start.html" data-v-e369c263><!--[--><span class="desc" data-v-e369c263>Previous page</span><span class="title" data-v-e369c263>Started</span><!--]--></a></div><div class="pager" data-v-e369c263><!----></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"start.md\":\"BsYKj79c\",\"index.md\":\"ChRtbkY7\",\"functions.md\":\"C4pu6CwN\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"rabbit-hooks\",\"description\":\"rabbit-hooks 文档\",\"base\":\"/rabbit-hooks/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"nav\":[],\"sidebar\":[{\"items\":[{\"text\":\"Started\",\"link\":\"/start\"},{\"text\":\"Functions\",\"link\":\"/functions\"}]}],\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/vuejs/vitepress\"}]},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
+  </body>
 </html>

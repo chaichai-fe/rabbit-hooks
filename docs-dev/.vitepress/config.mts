@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/rabbit-hooks/',
   title: 'rabbit-hooks',
   description: 'rabbit-hooks 文档',
   themeConfig: {
